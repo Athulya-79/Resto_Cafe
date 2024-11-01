@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto Cafe</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  bg-gradient-to-r from-white-500 to-grey-400 fixed-top py-4 shadow-lg">
+        <a class="navbar-brand text-pink-600 font-bold text-2xl" href="#">Resto Café</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link text-black hover:text-yellow-200" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link text-black hover:text-yellow-200" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link text-black hover-text-yellow-200" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section with Carousel -->
+<section class="hero-section relative w-full h-screen overflow-hidden">
+    <div class="carousel-images absolute inset-0 w-full h-full">
+        <div class="carousel-image bg-cover bg-center h-full w-full opacity-0 animate-fade-in-1" style="background-image: url('images/img1.jpg');"></div>
+        <div class="carousel-image bg-cover bg-center h-full w-full opacity-0 animate-fade-in-2" style="background-image: url('images/back2.webp');"></div>
+        <div class="carousel-image bg-cover bg-center h-full w-full opacity-0 animate-fade-in-3" style="background-image: url('images/espresso shots.webp');"></div>
+    </div>
+    <div class="container relative z-10 text-center flex flex-col items-center justify-center h-full">
+        <h1 class="text-4xl md:text-5xl font-bold text-white">Welcome to Resto Café</h1>
+        <p class="text-xl md:text-2xl text-gray-200 mt-4">Your favorite spot for food & coffee</p>
+    </div>
+</section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container text-center">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-4">Our Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Starters -->
+                <div class="menu-category">
+                    <h3 class="text-2xl font-semibold text-gray-800 ">Starters</h3>
+                    <div class="menu-item transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                        <img src="images/Bruschetta.jpg" alt="Bruschetta" class="w-full h-32 object-cover mb-2">
+
+                        <h4 class="font-bold">Bruschetta</h4>
+                        <p class="text-gray-600">Grilled bread topped with tomatoes, basil, and garlic.</p>
+                        <p class="font-semibold mb-3">$8.00</p>
+                    </div>
+                    <div class="menu-item transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                        <img src="images/Stuffed Mushrooms.jpg" alt="Stuffed Mushrooms" class="w-full h-32 object-cover mb-2">
+                        <h4 class="font-bold">Stuffed Mushrooms</h4>
+                        <p class="text-gray-600">Mushrooms stuffed with cheese and herbs.</p>
+                        <p class="font-semibold">$10.00</p>
+                    </div>
+                </div>
+    
+                <!-- Main Courses -->
+                <div class="menu-category">
+                    <h3 class="text-2xl font-semibold text-gray-800">Main Courses</h3>
+                    <div class="menu-item transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                        <img src="images/Grilled Salmon.jpg" alt="Grilled Salmon" class="w-full h-32 object-cover mb-2">
+                        <h4 class="font-bold">Grilled Salmon</h4>
+                        <p class="text-gray-600">Fresh salmon grilled to perfection.</p>
+                        <p class="font-semibold mb-3">$20.00</p>
+                    </div>
+                    <div class="menu-item transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                        <img src="images/Pasta Primavera.jpg" alt="Pasta Primavera" class="w-full h-32 object-cover mb-2">
+                        <h4 class="font-bold">Pasta Primavera</h4>
+                        <p class="text-gray-600">Pasta with seasonal vegetables and pesto sauce.</p>
+                        <p class="font-semibold">$15.00</p>
+                    </div>
+                </div>
+    
+                <!-- Desserts -->
+                <div class="menu-category">
+                    <h3 class="text-2xl font-semibold text-gray-800">Desserts</h3>
+                    <div class="menu-item transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                        <img src="images/Chocolate Lava Cake.jpg" alt="Chocolate Lava Cake" class="w-full h-32 object-cover mb-2">
+                        <h4 class="font-bold">Chocolate Lava Cake</h4>
+                        <p class="text-gray-600">Warm chocolate cake with a gooey center.</p>
+                        <p class="font-semibold mb-3">$7.00</p>
+                    </div>
+                    <div class="menu-item transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                        <img src="images/cheesecake.jpg" alt="Cheesecake" class="w-full h-32 object-cover mb-2">
+                        <h4 class="font-bold">Cheesecake</h4>
+                        <p class="text-gray-600">Rich and creamy cheesecake with a graham cracker crust.</p>
+                        <p class="font-semibold">$6.00</p>
+                    </div>
+                </div>
+    
+                <!-- Beverages
+                <div class="menu-category">
+                    <h3 class="text-2xl font-semibold text-gray-800">Beverages</h3>
+                    <div class="menu-item transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                        <img src="images/Coffee.jpg" alt="Coffee" class=" w-full h-32 object-cover mb-2">
+                        <h4 class="font-bold">Coffee</h4>
+                        <p class="text-gray-600">Freshly brewed coffee.</p>
+                        <p class="font-semibold">$3.00</p>
+                    </div>
+                    <div class="menu-item transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                        <img src="images/fresh_juice.jpg" alt="Fresh Juice" class=" w-full h-32 object-cover mb-2">
+                        <h4 class="font-bold">Fresh Juice</h4>
+                        <p class="text-gray-600">Refreshing seasonal fruit juice.</p>
+                        <p class="font-semibold">$4.00</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+            <!-- Add menu items here -->
+        </div>
+    </section>
+      <!-- Special Offers Section -->
+    <section id="offers" class="py-10 bg-yellow-50">
+        <div class="container text-center">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-4">Special Offers</h2>
+            <p class="text-gray-600 mb-8">Don't miss out on our special deals and seasonal offers!</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="offer-item bg-white shadow-lg rounded-lg p-6 transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                    <img src="./images/happy.webp" alt="Happy Hour Drinks" class="rounded-lg mb-4 w-full h-32 object-cover">
+                    <h3 class="text-2xl font-bold text-pink-600">Happy Hour</h3>
+                    <p class="text-gray-600 mt-2">Enjoy 50% off on all beverages every weekday from 4-6 PM.</p>
+                </div>
+                <div class="offer-item bg-white shadow-lg rounded-lg p-6 transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                    <img src="./images/seasonal.webp" alt="Happy Hour Drinks" class="rounded-lg mb-4 w-full h-32 object-cover">
+                    <h3 class="text-2xl font-bold text-pink-600">Seasonal Drinks</h3>
+                    <p class="text-gray-600 mt-2">Try our limited-edition pumpkin spice latte, only available this fall.</p>
+                </div>
+                <div class="offer-item bg-white shadow-lg rounded-lg p-6 transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                    <img src="./images/brunch.webp" alt="Happy Hour Drinks" class="rounded-lg mb-4 w-full h-32 object-cover">
+                    <h3 class="text-2xl font-bold text-pink-600">Weekend Brunch</h3>
+                    <p class="text-gray-600 mt-2">Join us for a special brunch menu every Saturday and Sunday.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!--  "Events & Happenings" Section -->
+      <section id="events" class="py-10">
+        <div class="container text-center">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-4">Events & Happenings</h2>
+            <p class="text-gray-600 mb-8">Join us for live music, workshops, and more!</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="event-item bg-gray-100 shadow-lg rounded-lg p-6 transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                    <img src="./images/live.webp" alt="Happy Hour Drinks" class="rounded-lg mb-4 w-full h-32 object-cover">
+                    <h3 class="text-2xl font-bold text-pink-600">Live Jazz Night</h3>
+                    <p class="text-gray-600 mt-2">Every Friday, 7 PM - 10 PM</p>
+                </div>
+                <div class="event-item bg-gray-100 shadow-lg rounded-lg p-6 transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                    <img src="./images/tasting.webp" alt="Happy Hour Drinks" class="rounded-lg mb-4 w-full h-32 object-cover">
+                    <h3 class="text-2xl font-bold text-pink-600">Coffee Tasting Workshop</h3>
+                    <p class="text-gray-600 mt-2">Monthly event. Learn to taste coffee like a pro.</p>
+                </div>
+                <div class="event-item bg-gray-100 shadow-lg rounded-lg p-6 transform transition duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                    <img src="./images/book.avif" alt="Happy Hour Drinks" class="rounded-lg mb-4 w-full h-32 object-cover">
+                    <h3 class="text-2xl font-bold text-pink-600">Book Club Meet</h3>
+                    <p class="text-gray-600 mt-2">First Saturday of every month.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-gray-200">
+        <div class="container text-center">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-4">About Us</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">At Resto Café, we believe in bringing people together over delicious food, rich coffee, and a cozy atmosphere. Founded in 2023 by food lovers and coffee enthusiasts, Resto Café was born out of a passion for quality ingredients and community spirit. We are committed to using locally-sourced ingredients and serving food and drinks made with love.</p>
+            <p class="text-gray-600 max-w-2xl mx-auto mt-4">Our café offers a relaxing space for everyone, whether you're here to work, catch up with friends, or enjoy a quiet moment. Discover our handcrafted coffee, homemade pastries, and signature dishes that keep our guests coming back for more.</p>
+        </div>
+    </section>
+
+    <!-- "Our Team" Section -->
+<section id="team" class="py-10 bg-gray-50">
+    <div class="container text-center">
+        <h2 class="text-3xl font-semibold text-gray-700 mb-4">Meet Our Team</h2>
+        <p class="text-gray-600 mb-8">Our dedicated team is here to make your visit memorable.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="team-member bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                <img src="images/lady.webp" alt="Barista" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Emma Smith</h3>
+                <p class="text-gray-600">Head Barista</p>
+            </div>
+            <div class="team-member bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                <img src="images/chef.avif" alt="Chef" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">John Doe</h3>
+                <p class="text-gray-600">Chef</p>
+            </div>
+            <div class="team-member bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                <img src="images/manager.avif" alt="Manager" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Sarah Lee</h3>
+                <p class="text-gray-600">Manager</p>
+            </div>
+            <div class="team-member bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                <img src="images/assistant.webp" alt="Assistant" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Alex Kim</h3>
+                <p class="text-gray-600">Assistant Barista</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+ <!-- "Testimonials" Section -->
+ <section id="testimonials" class="py-10">
+    <div class="container text-center">
+        <h2 class="text-3xl font-semibold text-gray-700 mb-4">What Our Customers Say</h2>
+        <p class="text-gray-600 mb-8">Hear from our happy customers!</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="testimonial-item bg-gray-100 shadow-lg rounded-lg p-6">
+                <p class="text-gray-700">"The best coffee in town! Always a cozy place to unwind."</p>
+                <p class="font-semibold text-pink-600 mt-2">- Anna W.</p>
+            </div>
+            <div class="testimonial-item bg-gray-100 shadow-lg rounded-lg p-6">
+                <p class="text-gray-700">"Amazing ambiance and friendly staff. Highly recommended!"</p>
+                <p class="font-semibold text-pink-600 mt-2">- Mark D.</p>
+            </div>
+            <div class="testimonial-item bg-gray-100 shadow-lg rounded-lg p-6">
+                <p class="text-gray-700">"Their seasonal menu is fantastic! Can't wait for my next visit."</p>
+                <p class="font-semibold text-pink-600 mt-2">- Lisa R.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-4">Get in Touch</h2>
+            
+            <!-- Contact Form -->
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" class="form-control w-full px-4 py-2 border border-gray-300 rounded" placeholder="Your Name" required>
+                </div>
+                <div class="mb-4">
+                    <input type="email" class="form-control w-full px-4 py-2 border border-gray-300 rounded" placeholder="Your Email" required>
+                </div>
+                <div class="mb-4">
+                    <textarea class="form-control w-full px-4 py-2 border border-gray-300 rounded" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="bg-pink-600 text-white font-semibold py-2 px-4 rounded hover:bg-pink-700">Send Message</button>
+            </form>
+            
+            <!-- Contact Details -->
+            <div class="mt-8">
+                <p class="text-gray-600">Or reach us at:</p>
+                <p class="text-gray-800 font-semibold">123 Café Street, Food City</p>
+                <p class="text-gray-600">Phone: (123) 456-7890</p>
+                <p class="text-gray-600">Email: contact@restocafe.com</p>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="mt-4">
+                <a href="#" class="text-gray-600 mx-2 hover:text-pink-600"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-600 mx-2 hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-600 mx-2 hover:text-pink-600"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!-- Footer -->
+    <footer class="py-3 bg-gray-800 text-center">
+        <p class="text-gray-300">© 2024 Resto Café. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
